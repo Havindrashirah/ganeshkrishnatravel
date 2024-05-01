@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif,"anton";
+}
+
+  
+#container h1{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, rgba(255, 94, 0, 0.815) 0.33%, rgb(129, 52, 0) 100%);
+    font-size:75px;
+    font-weight: 900;
+  }
+#header{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background:rgba(255,255,255,0.04);
+    box-shadow: 0 25px 45px rgba(0,0,0,.2);
+    position:absolute;
+    right:50px;
+    left: 50px;
+    top:125px;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    gap:0px;
+   
+    
+    
+    
+
+}
+#logo img{
+    width: 100%;
+
+}
+  
+#container h2{
+    font-size:50PX;
+    font-weight: 900;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0.33%, rgb(0, 0, 0) 100%);
+    
+}
+#container h3{
+    font-size:50PX;
+    font-weight: 900;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0.33%, rgb(0, 0, 0) 100%);
+    
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+#gradient{
+    background: conic-gradient(
+        from 180deg at 50% 50%,
+        rgb(0, 0, 0) 68.18deg,
+        rgba(255, 123, 0, 0.726)150deg,
+        rgb(0, 0, 0) 360deg);
+    width:100%;
+    height:100%;
+    z-index: -999;
+    position: fixed;
+    
+}
+#btncon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left:50px;
+    padding-right:50px;
+    position: fixed;
+    bottom: 20px;
+    
+  
+}
+#wpbtn{
+    width:200px;
+    height:60px;
+    border-radius:8px;
+    border-color: greenyellow;
+    background:rgba(187, 255, 0, 0.13);
+    color: greenyellow;
+    font-size:15px;
+    transition: 0.5s;
+    animation: ease-in-out;
+    
+    
+}
+#wpbtn:active{
+    background-color: rgb(77, 128, 0);
+    color: white;
+    border-color:white;
+}
+#callbtn{
+    width:200px;
+    height:60px;
+    border-radius:8px;
+    border-color: rgb(0, 157, 255);
+    background:rgba(0,157, 255, 0.13);
+    color: rgb(0, 157, 255);
+    font-size:15px;
+    transition: 0.5s;
+    animation: ease-in-out;
+   
+    
+}
+#callbtn:active{
+    background-color: rgb(0, 157, 255) ;
+    color: white;
+    border-color: white;
+}
+#callbtn:hover{
+    background-color: rgb(0, 157, 255) ;
+    color: white;
+    border-color: white;
+}
+#wpbtn:hover{
+    background-color: rgb(77, 128, 0);
+    color: white;
+    border-color:white;
+}
+@media screen and (max-width:600px){
+    #conbtn{
+        display: none;
+    }
+
+    #header{
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom:0;
+          border-radius: 0%;
+          background-color: transparent;
+          
+       
+    }
+    #btncon{
+        padding:30px;
+    }
+    #container h1{
+        font-size:35px;
+
+    
+    
+    }
+    #container h2{
+        font-size:20px;
+    }
+    #callbtn{
+        width:150px;
+    }
+    #wpbtn{
+        width: 150px;
+    }
+    #container{
+        text-align: left;
+        align-items:baseline ;
+    }
+    #gradient{
+        background:rgb(0, 0, 0);
+    }
+   
+
+
+}
+@media screen and (max-width:420px){
+    #container h2{
+        background: linear-gradient(180deg, rgb(255, 255, 255) 0.33%, rgb(139, 139, 139) 100%);
+    }
+}
+
+#cars img{
+   width:100%;
+   height: 100%;
+   border-radius: 25px;
+   position: relative;
+   top:35px;
+    
+}
+#count h1{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0.33%, rgb(0, 0, 0) 100%);
+     font-size:200px;
+     font-weight:900;
+}
+#count h2{
+    color: rgba(255, 115, 0,1);
+    font-size:100px;
+    position:relative;
+    bottom:40px;
+    font-weight:900;
+    
+}
+#count{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+@media screen and (max-width:600px){
+    #count h1{
+        font-size:100px;
+        margin-top:50px;
+    
+    }
+    #count h2{
+        font-size:40px;
+    }
+}
+@keyframes count {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#review{
+    width: 100%;
+    background-color: rgba(255, 115, 0,0.4);
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content:space-between;
+   
+    
+}
+#rev-head img{
+    width: 50px;
+    border-radius: 50px;
+}
+#rev-head{
+    display: flex;
+    gap:15px;
+    align-items:center ;
+    padding-bottom: 15px;
+    color:white;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width:600px){
+    #review{
+        width: 100%;
+        background-color: rgba(255, 115, 0,0.4);
+        border-radius: 25px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: left;
+    }
+    #rev-head img{
+        width: 50px;
+        border-radius: 50px;
+    }
+    #rev-head{
+        display: flex;
+        gap:15px;
+        align-items:center;
+        padding-bottom: 15px;
+    }
+}
+#rev-p{
+    color: white;
+}
+@media screen and (max-width:900px){
+    #review{
+        width: 100%;
+        background-color: rgba(255, 115, 0,0.4);
+        border-radius: 25px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: left;
+    }
+
+}
+
+#carlogo img{
+    width:200px;
+}
+#carlogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#seats{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;  
+}
+#seatno{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    color: white;
+    width:200px;
+}
+#seatab h1{
+    font-weight: 900;
+    color: white;
+}
+@media screen and (max-width:600px){
+    #seats{
+        background-color: rgba(255, 115, 0,0.4);
+        padding: 25px;
+        border-radius: 25px;
+    }
+}
+#feedbtn{
+    width:200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size:15px;
+    color: white;
+    background-color: transparent;
+    border-color: rgba(255, 115, 0,1);
+}
+#feedbtn:active{
+    border-color: transparent;
+    background-color: rgba(255, 115, 0,1);
+}
+#feedback{
+    width:350px;
+    border-radius:8px;
+    padding:25px ;
+    font-size:18px;
+    background-color:transparent;
+    color: white;  
+    border-color: white;
+}
+#feedback-form{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+#feedbtn:hover{
+    border-color: transparent;
+    background-color: rgba(255, 115, 0,1);
+}
+#name{
+    padding:15px;
+    width: 350px;
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+#email{
+    padding:15px;
+    width: 350px;
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+#footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding:25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+  
+}
+#footicon a{
+    font-size:25px;
+    color:white;
+    padding-left: 10px;
+}
+#footer-head{
+    color: white;
+}
+#water-mark{
+     color: white;
+     padding:10px;
+    
+     
+}
+#water-mark a{
+    color:rgba(255, 115, 0,1);
+    text-decoration:none;
+    font-size:10px;
+}
+
+@media screen and (max-width:600px){
+    #gap{
+        padding-bottom:100px;
+    }
+}
+#gap{
+    height:70px;
+    width: 100%;
+}
+
+#rew1{
+    width:20%;
+}
+#rew2{
+    width:20%;
+}
+#rew3{
+    width:20%;
+}
+#rew4{
+    width:20%;
+}
+@media screen and (max-width:900px){
+        #rew1{
+        width: 100%;
+    }
+    #rew2{
+        width: 100%;
+    }
+    #rew3{
+        width: 100%;
+    }
+    #rew4{
+        width: 100%;
+    }
+}
